@@ -9,9 +9,4 @@ buildscript {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
+// Repositories were removed from here because they are already in settings.gradle.kts
