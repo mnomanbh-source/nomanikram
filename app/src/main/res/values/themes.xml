@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LushApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/lush_black</item>
+        <item name="android:windowBackground">@color/lush_black</item>
+        <item name="colorPrimary">@color/lush_accent</item>
+    </style>
+
+    <style name="Theme.LushApp.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/ic_launcher_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.LushApp</item>
+    </style>
+</resources>
