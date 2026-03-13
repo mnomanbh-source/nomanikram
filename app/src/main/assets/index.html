@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lush Chats</title>
+    <style>
+        body { background: #121212; color: #39FF14; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .spinner { border: 4px solid rgba(57, 255, 20, 0.3); border-top: 4px solid #39FF14; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="spinner"></div>
+    <p>Initializing Lush Sync...</p>
+    <script>
+        if (navigator.onLine) {
+            window.location.href = "https://chats88.pythonanywhere.com";
+        } else {
+            document.querySelector('p').innerText = "Offline Mode Active. Local DB Loaded.";
+        }
+    </script>
+</body>
+</html>
